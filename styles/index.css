@@ -9,6 +9,21 @@
     color: #FD6E0A;
 }
 
+.dark-02 {
+    color: #474747;
+}
+
+.btn-primary {
+    background-color: #FD6E0A;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    padding: 18px 36px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 /* Google Fonts */
 
 .open-sans-normal {
@@ -22,8 +37,11 @@
 /* Navigation Styles */
 nav {
     display: flex;
-    background-color: #333;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #333; */
     padding: 1rem;
+    margin: 0 200px;
 }
 
 /* nav h3 {
@@ -33,7 +51,7 @@ nav {
     margin-bottom: 0.5rem;
 } */
 .nav-title{
-    color: #fff;
+    /* color: #fff; */
     font-weight: 800;
     font-size: 45px;
     margin-bottom: 0.5rem;
@@ -42,12 +60,14 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    align-items: center;
+    gap: 51px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 20px;
 }
 
 nav ul li a:hover {
