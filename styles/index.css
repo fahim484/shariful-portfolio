@@ -3,3 +3,53 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Common or Shared Styles */
+.text-primary{
+    color: #FD6E0A;
+}
+
+/* Google Fonts */
+
+.open-sans-normal {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    background-color: #333;
+    padding: 1rem;
+}
+
+/* nav h3 {
+    color: #fff;
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 0.5rem;
+} */
+.nav-title{
+    color: #fff;
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
