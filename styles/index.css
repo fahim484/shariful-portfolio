@@ -1,35 +1,57 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
+  height: 100vh;
 }
 
 /* Common or Shared Styles */
-.text-primary{
-    color: #FD6E0A;
+.secondary-bg {
+  background-color: #fff8f3;
+}
+
+.text-primary {
+  color: #fd6e0a;
+}
+
+.dark-01 {
+  color: #181818;
 }
 
 .dark-02 {
-    color: #474747;
+  color: #474747;
 }
 
 .dark-03 {
-    color: #757575;
+  color: #757575;
 }
 
 .btn-primary {
-    background-color: #FD6E0A;
-    color: #FFFFFF;
-    font-size: 20px;
-    font-weight: 700;
-    border: none;
-    padding: 18px 36px;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: #fd6e0a;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  padding: 18px 36px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.section-description {
+  font-size: 18px;
+  color: #555;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 /* Google Fonts */
@@ -38,27 +60,29 @@ body {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings: "wdth" 100;
 }
 
 /* Header Styles */
 .header-container {
-    background-image: url('../images/developer.png'), url(../images/header_bg.png);
-    background-repeat: no-repeat;
-    /* background-position: right top, left top;
+  background-image:
+    url("../images/developer.png"), url(../images/header_bg.png);
+  background-repeat: no-repeat;
+  /* background-position: right top, left top;
     background-size: contain, cover; */
-    background-position: top left, bottom right;
+  background-position:
+    top left,
+    bottom right;
 }
 
 /* Navigation Styles */
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* background-color: #333; */
-    padding: 1rem;
-    margin: 0 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: #333; */
+  padding: 1rem;
+  margin: 0 200px;
 }
 
 /* nav h3 {
@@ -67,30 +91,29 @@ nav {
     font-size: 45px;
     margin-bottom: 0.5rem;
 } */
-.nav-title{
-    /* color: #fff; */
-    font-weight: 800;
-    font-size: 45px;
-    margin-bottom: 0.5rem;
+.nav-title {
+  /* color: #fff; */
+  font-weight: 800;
+  font-size: 45px;
+  margin-bottom: 0.5rem;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 51px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 51px;
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
-
 
 /* Banner Styles */
 /* .banner-section {
@@ -99,42 +122,79 @@ nav ul li a:hover {
 } */
 
 .banner {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0 35px 0 230px;
-    gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 35px 0 230px;
+  gap: 2rem;
 }
 
 .banner-content {
-    max-width: 1180px;
+  max-width: 1180px;
 }
 
-.banner-title{
-    font-size: 45px;
-    font-weight: 600;
-    margin-bottom: 5px;
+.banner-title {
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 5px;
 }
 
 .banner-heading {
-    font-size: 50px;
-    font-weight: 700;
-    margin-bottom: 20px;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .banner-description {
-    font-size: 18px;
-    margin-bottom: 2rem;
+  font-size: 18px;
+  margin-bottom: 2rem;
 }
 
 .banner-image {
-    width: 100%;
-    height: 100%;
-    max-width: 600px;
-    max-height: 700px;
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
+  max-height: 700px;
 }
 /* .banner-image img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
 } */
+
+/* main section styles */
+main {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* about section styles */
+.about {
+  border-radius: 10px;
+  margin: 130px 0;
+  padding: 130px 150px;
+  text-align: center;
+}
+
+.title-description{
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.about-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.about-item .item-title {
+  font-size: 20px;
+}
+
+.about-item .item-description {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
