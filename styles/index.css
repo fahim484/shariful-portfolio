@@ -9,6 +9,12 @@ body {
 }
 
 /* Common or Shared Styles */
+:root {
+  --dark-02: #474747;
+  --dark-03: #757575;
+
+}
+
 .text-center{
   text-align: center;
 }
@@ -217,3 +223,47 @@ main section {
   box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
 }
 /* what I do section styles end */
+
+/* a summary of my resume section styles start */
+.resume-container{
+  display: flex;
+  gap: 24px;
+}
+
+.resume-title{
+  margin-bottom: 83px;
+}
+
+.resume-column-title{
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--dark-02);
+  margin-bottom: 30px;
+}
+
+.experience-title{
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--dark-02);
+}
+
+.experience-sub-title{
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--dark-03);
+  margin: 10px 0px;
+}
+
+.experience-description{
+  font-size: 16px;
+  color: var(--dark-03);
+}
+
+.resume-column hr {
+  margin: 30px 0;
+}
+
+.resume-download-btn{
+  margin-top: 50px;
+}
+/* a summary of my resume section styles end */
