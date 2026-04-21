@@ -82,8 +82,10 @@ body {
   /* background-position: right top, left top;
     background-size: contain, cover; */
   background-position:
-    top left,
     bottom right;
+  /* background-position:
+    top left,
+    bottom right; */
 }
 
 /* Navigation Styles */
