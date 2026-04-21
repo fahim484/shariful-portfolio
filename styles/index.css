@@ -10,6 +10,7 @@ body {
 
 /* Common or Shared Styles */
 :root {
+  --dark-01: #181818;
   --dark-02: #474747;
   --dark-03: #757575;
 
@@ -54,7 +55,7 @@ body {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 30px;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .section-description {
@@ -267,3 +268,44 @@ main section {
   margin-top: 50px;
 }
 /* a summary of my resume section styles end */
+
+
+/* footer section styles start */
+footer{
+  background-color: var(--dark-02);
+  display: flex;
+  padding: 130px 230px;
+}
+
+.footer-column{
+  width: 50%;
+}
+
+.footer-column h3{
+  color: var(--dark-01);
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.footer-column p{
+  color: var(--dark-02);
+  margin-top: 18px;
+  margin-bottom: 32px;
+}
+
+.footer-icon{
+  display: flex;
+  gap: 24px;
+}
+
+footer input[type="email"],
+input[type="text"], textarea {
+  width: 100%;
+  padding: 18px 30px;
+  margin-bottom: 24px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: var(--dark-03);
+}
+/* footer section styles end */
