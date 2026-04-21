@@ -13,10 +13,9 @@ body {
   --dark-01: #181818;
   --dark-02: #474747;
   --dark-03: #757575;
-
 }
 
-.text-center{
+.text-center {
   text-align: center;
 }
 
@@ -76,8 +75,9 @@ body {
 
 /* Header Styles */
 .header-container {
-  background-image:
-    url("../images/developer.png"), url(../images/header_bg.png);
+  /* background-image:
+    url("../images/developer.png"), url(../images/header_bg.png); */
+  background-image: url(../images/header_bg.png);
   background-repeat: no-repeat;
   /* background-position: right top, left top;
     background-size: contain, cover; */
@@ -190,7 +190,7 @@ main section {
   text-align: center;
 }
 
-.title-description{
+.title-description {
   font-size: 18px;
   margin-bottom: 40px;
 }
@@ -211,14 +211,13 @@ main section {
   font-weight: 700;
 }
 
-
 /* what I do section styles start */
-.skills-container{
+.skills-container {
   display: flex;
   gap: 24px;
 }
 
-.skill{
+.skill {
   padding: 30px 33px;
   border-radius: 5px;
   box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
@@ -226,36 +225,36 @@ main section {
 /* what I do section styles end */
 
 /* a summary of my resume section styles start */
-.resume-container{
+.resume-container {
   display: flex;
   gap: 24px;
 }
 
-.resume-title{
+.resume-title {
   margin-bottom: 83px;
 }
 
-.resume-column-title{
+.resume-column-title {
   font-size: 30px;
   font-weight: 700;
   color: var(--dark-02);
   margin-bottom: 30px;
 }
 
-.experience-title{
+.experience-title {
   font-size: 25px;
   font-weight: 700;
   color: var(--dark-02);
 }
 
-.experience-sub-title{
+.experience-sub-title {
   font-size: 20px;
   font-weight: 600;
   color: var(--dark-03);
   margin: 10px 0px;
 }
 
-.experience-description{
+.experience-description {
   font-size: 16px;
   color: var(--dark-03);
 }
@@ -264,43 +263,43 @@ main section {
   margin: 30px 0;
 }
 
-.resume-download-btn{
+.resume-download-btn {
   margin-top: 50px;
 }
 /* a summary of my resume section styles end */
 
-
 /* footer section styles start */
-footer{
+footer {
   background-color: var(--dark-02);
   display: flex;
   padding: 130px 230px;
 }
 
-.footer-column{
+.footer-column {
   width: 50%;
 }
 
-.footer-column h3{
+.footer-column h3 {
   color: var(--dark-01);
   font-size: 35px;
   font-weight: 700;
   margin-bottom: 30px;
 }
 
-.footer-column p{
+.footer-column p {
   color: var(--dark-02);
   margin-top: 18px;
   margin-bottom: 32px;
 }
 
-.footer-icon{
+.footer-icon {
   display: flex;
   gap: 24px;
 }
 
 footer input[type="email"],
-input[type="text"], textarea {
+input[type="text"],
+textarea {
   width: 100%;
   padding: 18px 30px;
   margin-bottom: 24px;
