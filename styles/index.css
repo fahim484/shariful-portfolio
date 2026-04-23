@@ -1,3 +1,7 @@
+/* Desktop-First Approach:- */
+
+/* Base styles for desktop */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,9 +10,10 @@
 
 body {
   height: 100vh;
+  width: 1200px;
 }
 
-/* Common or Shared Styles */
+/* Common or Shared Styles Start */
 :root {
   --dark-01: #181818;
   --dark-02: #474747;
@@ -43,9 +48,9 @@ body {
   background-color: #fd6e0a;
   color: #ffffff;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 600;
   border: none;
-  padding: 18px 36px;
+  padding: 12px 20px;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -73,6 +78,8 @@ body {
   font-variation-settings: "wdth" 100;
 }
 
+/* Common or Shared Styles End */
+
 /* Header Styles */
 .header-container {
   /* background-image:
@@ -81,21 +88,20 @@ body {
   background-repeat: no-repeat;
   /* background-position: right top, left top;
     background-size: contain, cover; */
-  background-position:
-    bottom right;
+  background-position: bottom right;
   /* background-position:
     top left,
     bottom right; */
 }
 
-/* Navigation Styles */
+/* Navigation Styles Start */
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   /* background-color: #333; */
   padding: 1rem;
-  margin: 0 200px;
+  margin: 0 100px;
 }
 
 /* nav h3 {
@@ -107,7 +113,7 @@ nav {
 .nav-title {
   /* color: #fff; */
   font-weight: 800;
-  font-size: 45px;
+  font-size: 35px;
   margin-bottom: 0.5rem;
 }
 
@@ -115,7 +121,7 @@ nav ul {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 51px;
+  gap: 25px;
 }
 
 nav ul li a {
@@ -128,7 +134,10 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* Banner Styles */
+/* Navigation Styles End */
+
+/* Banner Styles Start */
+
 /* .banner-section {
     padding: 2rem;
     text-align: center;
@@ -138,7 +147,7 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin: 0 35px 0 230px;
+  margin: 0 35px 0 120px;
   gap: 2rem;
 }
 
@@ -163,6 +172,11 @@ nav ul li a:hover {
   margin-bottom: 2rem;
 }
 
+.banner-btns {
+  display: flex;
+  gap: 24px;
+}
+
 .banner-image {
   width: 100%;
   height: 100%;
@@ -174,6 +188,8 @@ nav ul li a:hover {
     height: auto;
     border-radius: 10px;
 } */
+
+/* Banner Styles End */
 
 /* main section styles */
 main {
@@ -310,3 +326,165 @@ textarea {
   color: var(--dark-03);
 }
 /* footer section styles end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablets (up to 768px) */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Small phones (up to 480px) */
+@media (max-width: 480px) {
+  /* .container {
+    padding: 10px;
+  } */
+  /* Header Styles */
+  .header-container {
+    background-image: url(../images/header_bg.png);
+    background-position: bottom right;
+  }
+
+  /* Navigation Styles Start */
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #333; */
+    padding: 1rem;
+    margin: 0 100px;
+  }
+
+  /* nav h3 {
+    color: #fff;
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 0.5rem;
+} */
+  .nav-title {
+    /* color: #fff; */
+    font-weight: 800;
+    font-size: 35px;
+    margin-bottom: 0.5rem;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+  /* Navigation Styles End */
+
+  /* Banner Styles Start */
+
+  /* .banner-section {
+    padding: 2rem;
+    text-align: center;
+} */
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 35px 0 120px;
+    gap: 2rem;
+  }
+
+  .banner-text {
+    text-align: center;
+  }
+
+  .banner-content {
+    text-align: center;
+  }
+
+  .banner-title {
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  .banner-heading {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .banner-description {
+    font-size: 18px;
+    margin-bottom: 2rem;
+  }
+
+  .banner-btns {
+    justify-content: center;
+  }
+
+  .banner-image {
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    max-height: 700px;
+  }
+  /* .banner-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+} */
+
+  /* Banner Styles End */
+}
