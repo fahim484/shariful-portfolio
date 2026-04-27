@@ -418,9 +418,9 @@ textarea {
 @media (max-width: 1024px) {
   /* Common or Shared Styles Start */
   .btn-primary {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
-    padding: 12px 20px;
+    padding: 10px 16px;
   }
 
   .section-title {
@@ -444,17 +444,17 @@ nav {
 }
 
 .nav-title {
-  font-size: 35px;
+  font-size: 30px;
 }
 
 nav ul {
-  gap: 20px;
+  gap: 16px;
 }
 
 nav ul li a {
   color: #fff;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 nav ul li a:hover {
@@ -462,6 +462,64 @@ nav ul li a:hover {
 }
 
 /* Navigation Styles End */
+
+/* Banner Styles Start */
+  .banner {
+  margin: 0 35px 0 120px;
+  gap: 2rem;
+}
+
+.banner-content {
+  max-width: 1024px;
+}
+
+.banner-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.banner-heading {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.banner-description {
+  font-size: 16px;
+  margin-bottom: 1.5rem;
+}
+
+.banner-btns {
+  gap: 16px;
+}
+
+.banner-image {
+  max-width: 500px;
+  max-height: 700px;
+}
+
+.banner-counts{
+  display: flex;
+  gap: 18px;
+}
+
+.banner-count{
+  margin: 20px 0;
+}
+
+.banner-count h4{
+  font-size: 22px;
+}
+
+.banner-count p{
+  font-size: 14px;
+}
+
+.banner-icons{
+  gap: 18px;
+  font-size: 30px;
+}
+/* Banner Styles End */
 
 }
 
@@ -530,20 +588,33 @@ nav ul li a:hover {
 
 /* Small phones (up to 480px) */
 @media (max-width: 480px) {
+
+  /* Common or Shared Styles Start */
+  .btn-primary {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+  /* Common or Shared Styles End */
+
   /* .container {
     padding: 10px;
   } */
+
+
+
   /* Header Styles */
   .header-container {
     background-image: url(../images/header_bg.png);
-    background-position: bottom right;
+    background-position: bottom left;
   }
 
   /* Navigation Styles Start */
   nav {
-    display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     /* background-color: #333; */
     padding: 1rem;
     margin: 0 100px;
@@ -558,26 +629,23 @@ nav ul li a:hover {
   .nav-title {
     /* color: #fff; */
     font-weight: 800;
-    font-size: 35px;
-    margin-bottom: 0.5rem;
+    font-size: 25px;
+    margin-bottom: 0rem;
+    margin-right: 10px;
   }
 
   nav ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 25px;
+    gap: 10px;
   }
 
   nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
+    font-size: 10px;
   }
 
-  nav ul li a:hover {
+  /* nav ul li a:hover {
     text-decoration: underline;
-  }
+
+  } */
 
   /* Navigation Styles End */
 
@@ -606,20 +674,19 @@ nav ul li a:hover {
   }
 
   .banner-title {
-    font-size: 45px;
-    font-weight: 600;
-    margin-bottom: 5px;
+    font-size: 20px;
   }
 
   .banner-heading {
-    font-size: 50px;
-    font-weight: 700;
-    margin-bottom: 20px;
+    font-size: 30px;
+    margin-bottom: 12px;
   }
 
   .banner-description {
-    font-size: 18px;
-    margin-bottom: 2rem;
+    font-size: 10px;
+    margin-bottom: 1rem;
+    max-width: 350px;
+    text-align: center;
   }
 
   .banner-btns {
@@ -629,14 +696,38 @@ nav ul li a:hover {
   .banner-image {
     width: 100%;
     height: 100%;
-    max-width: 600px;
-    max-height: 700px;
+    max-width: 300px;
+    max-height: 350px;
   }
   /* .banner-image img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
 } */
+
+.banner-counts{
+  justify-content: center;
+  gap: 15px;
+}
+
+.banner-count{
+  margin: 30px 0;
+}
+
+.banner-count h4{
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.banner-count p{
+  font-size: 10px;
+}
+
+.banner-icons{
+  justify-content: center;
+  gap: 15px;
+  font-size: 25px;
+}
 
   /* Banner Styles End */
 }
