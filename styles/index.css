@@ -293,18 +293,49 @@ main .section-container {
   font-weight: 700;
 }
 
-/* what I do section styles start */
+/* skills section styles start */
+.skills-description {
+  margin: 0 auto 40px auto;
+}
+
 .skills-container {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
 }
 
 .skill {
+  text-align: center;
+  width: calc(33.33% - 24px);
   padding: 30px 33px;
-  border-radius: 5px;
+  border-radius: 15px;
   box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
 }
-/* what I do section styles end */
+
+.skill:hover {
+  box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.skill img {
+  width: 60px;
+  height: 60px;
+}
+
+.skill-title{  
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--dark-01);
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.skill-description{
+  font-size: 16px;
+  color: var(--dark-03);
+  text-align: justify;
+}
+/* skills section styles end */
 
 /* a summary of my resume section styles start */
 .resume-container {
