@@ -124,6 +124,11 @@ nav {
   margin-bottom: 0.5rem;
 }
 
+.nav-title a {
+  text-decoration: none;
+  color: var(--dark-01);
+}
+
 nav ul {
   list-style: none;
   display: flex;
