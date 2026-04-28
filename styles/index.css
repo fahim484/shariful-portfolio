@@ -337,7 +337,7 @@ main .section-container {
 }
 /* skills section styles end */
 
-/* a summary of my resume section styles start */
+/* projects section styles start */
 .resume-container {
   display: flex;
   gap: 24px;
@@ -379,7 +379,7 @@ main .section-container {
 .resume-download-btn {
   margin-top: 50px;
 }
-/* a summary of my resume section styles end */
+/* projects section styles end */
 
 /* footer section styles start */
 footer {
