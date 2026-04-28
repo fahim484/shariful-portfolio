@@ -56,6 +56,12 @@ body {
   cursor: pointer;
 }
 
+.btn-primary:hover {
+  background-color: #e65c00;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .section-title {
   font-size: 35px;
   font-weight: 700;
@@ -133,6 +139,9 @@ nav ul li a {
 
 nav ul li a:hover {
   text-decoration: underline;
+  text-decoration-color: #fd6e0a;
+  text-decoration-thickness: 2px;
+  text-decoration-style: solid;
 }
 
 /* Navigation Styles End */
@@ -178,7 +187,7 @@ nav ul li a:hover {
   gap: 24px;
 }
 
-.banner-image {
+.banner-about-image {
   width: 100%;
   height: 100%;
   max-width: 600px;
@@ -243,6 +252,13 @@ main .section-container {
 }
 
 /* about section styles */
+.about-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 35px 0 120px;
+  gap: 5rem;
+}
 .about {
   border-radius: 10px;
   /* padding: 130px 150px; */
@@ -251,9 +267,14 @@ main .section-container {
   text-align: center;
 }
 
-.title-description {
+.about-section-title{
+  margin-top: 180px;
+}
+
+.about-title-description {
   font-size: 18px;
   margin-bottom: 40px;
+  text-align: start;
 }
 
 .about-items {
