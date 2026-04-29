@@ -406,6 +406,20 @@ main .section-container {
   margin-bottom: 32px;
 }
 
+.footer-contact-info .fa-solid {
+    font-size: 26px;
+    color: var(--dark-02);
+}
+
+.footer-contact-info-item{
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  
+}
+
 .footer-icon {
   display: flex;
   gap: 24px;
