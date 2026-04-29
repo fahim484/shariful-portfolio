@@ -352,12 +352,7 @@ main .section-container {
   margin-bottom: 83px;
 }
 
-.resume-column-title {
-  font-size: 30px;
-  font-weight: 700;
-  color: var(--dark-02);
-  margin-bottom: 30px;
-}
+
 
 .experience-title {
   font-size: 25px;
@@ -387,10 +382,11 @@ main .section-container {
 /* projects section styles end */
 
 /* footer section styles start */
-footer {
-  background-color: var(--dark-02);
+.footer-container {
+  /* background-color: var(--dark-02); */
   display: flex;
-  padding: 130px 230px;
+  padding: 130px 200px;
+  gap: 5rem;
 }
 
 .footer-column {
@@ -415,6 +411,26 @@ footer {
   gap: 24px;
 }
 
+.footer-icon a {
+  color: var(--dark-02);
+  font-size: 30px;
+  transition: color 0.3s ease;
+}
+
+.footer-icon a:hover {
+  color: var(--text-primary);
+}
+
+.footer-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-icon a:hover img {
+  filter: brightness(1.2);
+  
+}
+
 footer input[type="email"],
 input[type="text"],
 textarea {
@@ -425,6 +441,67 @@ textarea {
   border-radius: 5px;
   color: var(--dark-03);
 }
+
+footer hr {
+  margin: 0px 30px;
+}
+
+.footer-copy-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 200px;
+  padding: 40px 0px;
+}
+
+.footer-copy-left-text{
+  color: var(--dark-02);
+  font-size: 18px;
+}
+
+.footer-copy-left-name {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.footer-copy-right{
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.footer-copy-right-links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  color: var(--dark-02);
+  text-decoration: none;
+}
+
+.footer-developer{
+  color: var(--dark-02);
+  font-size: 11px;
+}
+
+.footer-developer a{
+  color: var(--dark-02);
+  text-decoration: none;
+  margin-left: 4px;
+  font-weight: 800;
+}
+
+.footer-developer a:hover{
+  text-decoration: underline;
+  text-decoration-color: var(--text-primary);
+  text-decoration-thickness: 1px;
+  text-decoration-style: solid;
+  color: var(--text-primary);
+}
+
+
 /* footer section styles end */
 
 
