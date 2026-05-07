@@ -246,7 +246,7 @@ nav ul li a:hover {
 
 /* Banner Styles End */
 
-/* main section styles */
+/* main section styles start */
 .main-section {
   max-width: 1140px;
   margin: 0 auto;
@@ -280,22 +280,6 @@ main .section-container {
   font-size: 18px;
   margin-bottom: 40px;
   text-align: start;
-}
-
-.about-items {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 2rem;
-}
-
-.about-item .item-title {
-  font-size: 20px;
-}
-
-.about-item .item-description {
-  font-size: 20px;
-  font-weight: 700;
 }
 
 /* skills section styles start */
@@ -410,6 +394,7 @@ main .section-container {
   margin-top: 50px;
 }
 /* projects section styles end */
+/* main section styles end */
 
 /* footer section styles start */
 .footer-container {
@@ -769,17 +754,26 @@ nav ul li a:hover {
 
   /* Common or Shared Styles Start */
   .btn-primary {
-  font-size: 10px;
-  font-weight: 600;
-  padding: 6px 12px;
-  border-radius: 5px;
+  font-size: 8px;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 4px;
   cursor: pointer;
 }
-  /* Common or Shared Styles End */
+.section-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  /* text-align: center; */
+}
 
-  /* .container {
-    padding: 10px;
-  } */
+.section-description {
+  font-size: 18px;
+  color: #555;
+  text-align: center;
+  margin-bottom: 40px;
+}
+  /* Common or Shared Styles End */
 
 
 
@@ -792,18 +786,11 @@ nav ul li a:hover {
   /* Navigation Styles Start */
   nav {
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     /* background-color: #333; */
-    padding: 1rem;
-    margin: 0 100px;
+    padding: 0.8rem 1rem;
+    margin: 0 10px;
   }
-
-  /* nav h3 {
-    color: #fff;
-    font-weight: 800;
-    font-size: 45px;
-    margin-bottom: 0.5rem;
-} */
   .nav-title {
     /* color: #fff; */
     font-weight: 800;
@@ -813,33 +800,22 @@ nav ul li a:hover {
   }
 
   nav ul {
-    gap: 10px;
+    gap: 8px;
   }
 
   nav ul li a {
     font-size: 10px;
   }
-
-  /* nav ul li a:hover {
-    text-decoration: underline;
-
-  } */
-
   /* Navigation Styles End */
 
   /* Banner Styles Start */
-
-  /* .banner-section {
-    padding: 2rem;
-    text-align: center;
-} */
-
   .banner {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    margin: 0 35px 0 120px;
+    margin: 0 16px;
+    padding: 20px 0;
     gap: 2rem;
   }
 
@@ -877,19 +853,13 @@ nav ul li a:hover {
     max-width: 300px;
     max-height: 350px;
   }
-  /* .banner-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-} */
-
 .banner-counts{
   justify-content: center;
   gap: 15px;
 }
 
 .banner-count{
-  margin: 30px 0;
+  margin: 15px 0;
 }
 
 .banner-count h4{
@@ -906,6 +876,221 @@ nav ul li a:hover {
   gap: 15px;
   font-size: 25px;
 }
+/* Banner Styles End */
 
-  /* Banner Styles End */
+/* main section styles start */
+main .section-container {
+  padding: 50px 0;
+}
+
+  /* About Styles Start */
+  .about-container {
+    flex-direction: column-reverse;
+    padding: 0 16px;
+    gap: 2rem;
+  }
+  .about-section-title{
+  margin-top: 90px;
+}
+
+.about-title-description {
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* About Styles End */
+
+/* Skill Styles Start */
+.skills-description {
+  margin: 0 auto 20px auto;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill {
+  text-align: center;
+  width: calc(50% - 12px);
+  padding: 15px 17px;
+  border-radius: 12px;
+}
+
+.skill img {
+  width: 30px;
+  height: 30px;
+}
+
+.skill-title{  
+  font-size: 10px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.skill-description{
+  font-size: 8px;
+  text-align: justify;
+}
+/* Skill Styles End */
+
+/* Projects Styles Start */
+.projects-title{
+  margin-bottom: 50px;
+}
+
+.project-container {
+  flex-direction: column;
+  gap: 12px;
+}
+
+.project{
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 0 auto;
+}
+
+.project img {
+  width: 80px;
+  height: 140px;
+}
+
+.project-app-left, .project-app-right {
+  width: 200px;
+}
+
+.project-title {
+  margin-bottom: 18px;
+}
+
+.project-title {
+  font-size: 15px;
+}
+
+.project-sub-title {
+  font-size: 10px;
+  margin: 5px 0px;
+}
+
+.project-description {
+  font-size: 8px;
+  color: var(--dark-03);
+}
+
+.project-code {
+  margin-top: 5px;
+  font-size: 7px;
+}
+
+.project-column hr {
+  margin: 15px 0;
+}
+
+.project-download-btn {
+  margin-top: 25px;
+}
+/* Projects Styles End */
+/* main section styles end */
+
+
+  /* Footer Styles Start */
+  
+.footer-container {
+    flex-direction: column;
+    padding: 60px 20px;
+    gap: 2rem;
+  }
+
+.footer-column {
+  width: 100%;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-column p {
+  font-size: 12px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+.footer-icon {
+  gap: 14px;
+}
+
+.footer-icon a {
+  font-size: 18px;
+}
+
+
+.footer-icon img {
+  width: 18px;
+  height: 18px;
+}
+
+.footer-contact-info .fa-solid {
+    font-size: 18px;
+}
+
+.footer-contact-info-item{
+  gap: 10px;
+  
+}
+
+footer input[type="email"],
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 14px;
+}
+
+footer hr {
+  margin: 0px 30px;
+}
+
+.footer-copy-container {
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 12px;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+.footer-copy-left-text{
+  font-size: 10px;
+}
+
+.footer-copy-left-name {
+  font-size: 12px;
+}
+
+.footer-copy-right{
+  flex-direction: column;
+  gap: 10px;
+  font-size: 10px;
+}
+
+.footer-copy-right-links{
+  gap: 8px;
+  font-size: 10px;
+}
+
+.footer-copy-right-links p{
+  gap: 8px;
+  font-size: 10px;
+}
+
+.footer-line{
+  display: none;
+}
+
+.footer-developer{
+  font-size: 8px;
+}
+  /* Footer Styles End */
 }
