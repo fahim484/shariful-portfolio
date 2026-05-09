@@ -136,8 +136,7 @@ nav ul {
   gap: 25px;
 }
 
-nav ul li a {
-  color: #fff;
+nav ul li a, nav ul li.dropdown .dropdown-content a {
   text-decoration: none;
   font-size: 20px;
 }
@@ -147,6 +146,35 @@ nav ul li a:hover {
   text-decoration-color: #fd6e0a;
   text-decoration-thickness: 2px;
   text-decoration-style: solid;
+}
+
+nav ul li.dropdown {
+  display: inline-block;
+}
+
+nav ul li.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+nav ul li.dropdown .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+nav ul li.dropdown .dropdown-content a:hover {
+  background-color: #f0923b7b;
+}
+
+nav ul li.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /* Navigation Styles End */
@@ -578,7 +606,7 @@ footer hr {
 
 
 /* Medium devices (laptops, 1024px and up) */
-@media (max-width: 1024px) {
+@media (max-width: 1240px) {
   /* Common or Shared Styles Start */
   .btn-primary {
     font-size: 16px;
