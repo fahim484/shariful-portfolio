@@ -136,7 +136,8 @@ nav ul {
   gap: 25px;
 }
 
-nav ul li a, nav ul li.dropdown .dropdown-content a {
+nav ul li a,
+nav ul li.dropdown .dropdown-content a {
   text-decoration: none;
   font-size: 20px;
 }
@@ -157,7 +158,7 @@ nav ul li.dropdown .dropdown-content {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -180,11 +181,6 @@ nav ul li.dropdown:hover .dropdown-content {
 /* Navigation Styles End */
 
 /* Banner Styles Start */
-
-/* .banner-section {
-    padding: 2rem;
-    text-align: center;
-} */
 
 .banner {
   display: flex;
@@ -232,12 +228,12 @@ nav ul li.dropdown:hover .dropdown-content {
     border-radius: 10px;
 } */
 
-.banner-counts{
+.banner-counts {
   display: flex;
   gap: 24px;
 }
 
-.banner-count{
+.banner-count {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -245,25 +241,25 @@ nav ul li.dropdown:hover .dropdown-content {
   margin: 40px 0;
 }
 
-.banner-count h4{
+.banner-count h4 {
   font-size: 30px;
   font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 10px;
 }
 
-.banner-count p{
+.banner-count p {
   font-size: 18px;
   color: var(--dark-03);
 }
 
-.banner-icons{
+.banner-icons {
   display: flex;
   gap: 26px;
   font-size: 40px;
 }
 
-.banner-icons i{
+.banner-icons i {
   color: var(--dark-02);
   transition: color 0.3s ease;
 }
@@ -285,7 +281,7 @@ main .section-container {
 }
 
 /* about section styles */
-.about-container{
+.about-container {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -300,7 +296,7 @@ main .section-container {
   text-align: center;
 }
 
-.about-section-title{
+.about-section-title {
   margin-top: 180px;
 }
 
@@ -339,7 +335,7 @@ main .section-container {
   height: 60px;
 }
 
-.skill-title{  
+.skill-title {
   font-size: 20px;
   font-weight: bold;
   color: var(--dark-01);
@@ -347,7 +343,7 @@ main .section-container {
   margin-bottom: 20px;
 }
 
-.skill-description{
+.skill-description {
   font-size: 16px;
   color: var(--dark-03);
   text-align: justify;
@@ -355,7 +351,7 @@ main .section-container {
 /* skills section styles end */
 
 /* projects section styles start */
-.projects-title{
+.projects-title {
   margin-bottom: 100px;
 }
 
@@ -364,7 +360,7 @@ main .section-container {
   gap: 24px;
 }
 
-.project{
+.project {
   display: flex;
   gap: 24px;
 }
@@ -450,17 +446,16 @@ main .section-container {
 }
 
 .footer-contact-info .fa-solid {
-    font-size: 26px;
-    color: var(--dark-02);
+  font-size: 26px;
+  color: var(--dark-02);
 }
 
-.footer-contact-info-item{
+.footer-contact-info-item {
   width: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 18px;
-  
 }
 
 .footer-icon {
@@ -485,7 +480,6 @@ main .section-container {
 
 .footer-icon a:hover img {
   filter: brightness(1.2);
-  
 }
 
 footer input[type="email"],
@@ -503,7 +497,7 @@ footer hr {
   margin: 0px 30px;
 }
 
-.footer-copy-container{
+.footer-copy-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -511,7 +505,7 @@ footer hr {
   padding: 40px 0px;
 }
 
-.footer-copy-left-text{
+.footer-copy-left-text {
   color: var(--dark-02);
   font-size: 18px;
 }
@@ -521,7 +515,7 @@ footer hr {
   font-weight: 700;
 }
 
-.footer-copy-right{
+.footer-copy-right {
   display: flex;
   gap: 24px;
   align-items: center;
@@ -529,7 +523,7 @@ footer hr {
   font-size: 14px;
 }
 
-.footer-copy-right-links{
+.footer-copy-right-links {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -538,26 +532,25 @@ footer hr {
   text-decoration: none;
 }
 
-.footer-developer{
+.footer-developer {
   color: var(--dark-02);
   font-size: 11px;
 }
 
-.footer-developer a{
+.footer-developer a {
   color: var(--dark-02);
   text-decoration: none;
   margin-left: 4px;
   font-weight: 800;
 }
 
-.footer-developer a:hover{
+.footer-developer a:hover {
   text-decoration: underline;
   text-decoration-color: var(--text-primary);
   text-decoration-thickness: 1px;
   text-decoration-style: solid;
   color: var(--text-primary);
 }
-
 
 /* footer section styles end */
 
@@ -606,8 +599,17 @@ footer hr {
 
 
 /* Medium devices (laptops, 1024px and up) */
-@media (max-width: 1240px) {
+@media (max-width: 1024px) {
   /* Common or Shared Styles Start */
+  .main-section {
+    max-width: 880px;
+    margin: 0 auto;
+  }
+
+  main .section-container {
+    padding: 70px 0;
+  }
+
   .btn-primary {
     font-size: 16px;
     font-weight: 600;
@@ -615,104 +617,278 @@ footer hr {
   }
 
   .section-title {
-  font-size: 35px;
-  font-weight: 700;
-  margin-bottom: 30px;
-  /* text-align: center; */
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    /* text-align: center; */
+  }
+
+  .section-description {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  /* Common or Shared Styles End */
+
+  /* Navigation Styles Start */
+  nav {
+    padding: 0.5rem;
+  }
+
+  .nav-title {
+    font-size: 30px;
+  }
+
+  nav ul {
+    gap: 16px;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+  /* Navigation Styles End */
+
+  /* Banner Styles Start */
+  .banner {
+    margin: 0 35px 0 120px;
+    gap: 2rem;
+  }
+
+  .banner-content {
+    max-width: 1024px;
+  }
+
+  .banner-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  .banner-heading {
+    font-size: 35px;
+    margin-bottom: 14px;
+  }
+
+  .banner-description {
+    font-size: 16px;
+    margin-bottom: 1.5rem;
+  }
+
+  .banner-btns {
+    gap: 16px;
+  }
+
+  .banner-about-image {
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 700px;
+  }
+
+  .banner-counts {
+    display: flex;
+    gap: 18px;
+  }
+
+  .banner-count {
+    margin: 20px 0;
+  }
+
+  .banner-count h4 {
+    font-size: 22px;
+  }
+
+  .banner-count p {
+    font-size: 14px;
+  }
+
+  .banner-icons {
+    gap: 18px;
+    font-size: 30px;
+  }
+  /* Banner Styles End */
+
+  /* about section styles Start*/
+  .about-container {
+    padding: 0 25px 0 70px;
+    gap: 3rem;
+  }
+  .about {
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .about-section-title {
+    margin-top: 90px;
+  }
+
+  .about-title-description {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  /* about section styles End*/
+
+  /* skills section styles start */
+  .skills-description {
+    margin: 0 auto 40px auto;
+  }
+
+  .skills-container {
+    gap: 12px;
+  }
+
+  .skill {
+    text-align: center;
+    width: calc(33.33% - 20px);
+    padding: 30px 33px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+  }
+
+  .skill:hover {
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+
+  .skill img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .skill-title {
+    font-size: 16px;
+    margin-top: 25px;
+    margin-bottom: 16px;
+  }
+
+  .skill-description {
+    font-size: 12px;
+  }
+  /* skills section styles end */
+
+  * projects section styles start */
+.projects-title {
+  margin-bottom: 80px;
 }
 
-.section-description {
-  font-size: 18px;
-  color: #555;
-  text-align: center;
-  margin-bottom: 40px;
-}
-/* Common or Shared Styles End */
-
-/* Navigation Styles Start */
-nav {
-  padding: 0.5rem;
+.project-title {
+  margin-bottom: 22px;
 }
 
-.nav-title {
-  font-size: 30px;
+.project-title {
+  font-size: 20px;
 }
 
-nav ul {
-  gap: 16px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
+.project-sub-title {
   font-size: 16px;
 }
 
-nav ul li a:hover {
-  text-decoration: underline;
+.project-description {
+  font-size: 12px;
 }
 
-/* Navigation Styles End */
+.project-code {
+  margin-top: 8px;
+  font-size: 12px;
+}
 
-/* Banner Styles Start */
-  .banner {
-  margin: 0 35px 0 120px;
+.project-download-btn {
+  margin-top: 30px;
+}
+/* projects section styles end */
+
+/* footer section styles start */
+.footer-container {
+  padding: 80px 80px;
   gap: 2rem;
 }
 
-.banner-content {
-  max-width: 1024px;
+.footer-column {
+  width: 50%;
 }
 
-.banner-title {
-  font-size: 28px;
-  font-weight: 600;
-  margin-bottom: 5px;
+.footer-column p{
+  font-size: 12px;
 }
 
-.banner-heading {
-  font-size: 40px;
-  margin-bottom: 16px;
+.footer-column h3 {
+  font-size: 25px;
+  margin-bottom: 20px;
 }
 
-.banner-description {
-  font-size: 16px;
-  margin-bottom: 1.5rem;
+.footer-column p {
+  margin-top: 4px;
+  margin-bottom: 22px;
 }
 
-.banner-btns {
+.footer-contact-info .fa-solid {
+  font-size: 20px;
+}
+
+.footer-contact-info-item {
+  gap: 14px;
+}
+
+.footer-contact-info-item p {
+  font-size: 12px;
+}
+
+.footer-icon {
   gap: 16px;
 }
 
-.banner-image {
-  max-width: 500px;
-  max-height: 700px;
+.footer-icon a {
+  font-size: 20px;
 }
 
-.banner-counts{
-  display: flex;
-  gap: 18px;
+.footer-icon img {
+  width: 24px;
+  height: 24px;
 }
 
-.banner-count{
-  margin: 20px 0;
+footer input[type="email"],
+input[type="text"],
+textarea {
+  padding: 16px 25px;
+  margin-bottom: 20px;
 }
 
-.banner-count h4{
-  font-size: 22px;
+.footer-copy-container {
+  margin: 0px 100px;
+  padding: 30px 0px;
 }
 
-.banner-count p{
+.footer-copy-left-text {
   font-size: 14px;
 }
 
-.banner-icons{
-  gap: 18px;
-  font-size: 30px;
+.footer-copy-right {
+  gap: 10px;
+  font-size: 10px;
 }
-/* Banner Styles End */
+
+.footer-copy-right-links {
+  gap: 10px;
+}
+
+.footer-developer {
+  font-size: 10px;
+}
+/* footer section styles end */
 
 }
+
+
+
 
 
 
@@ -746,64 +922,30 @@ nav ul li a:hover {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Small phones (up to 480px) */
 @media (max-width: 480px) {
-
   /* Common or Shared Styles Start */
   .btn-primary {
-  font-size: 7px;
-  font-weight: 500;
-  padding: 5px 10px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.section-title {
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  /* text-align: center; */
-}
+    font-size: 7px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .section-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    /* text-align: center; */
+  }
 
-.section-description {
-  font-size: 18px;
-  color: #555;
-  text-align: center;
-  margin-bottom: 40px;
-}
+  .section-description {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 40px;
+  }
   /* Common or Shared Styles End */
-
-
 
   /* Header Styles */
   .header-container {
@@ -831,18 +973,19 @@ nav ul li a:hover {
   nav ul {
     gap: 8px;
   }
-  nav ul li a, nav ul li.dropdown .dropdown-content a {
-  font-size: 9px;
-}
+  nav ul li a,
+  nav ul li.dropdown .dropdown-content a {
+    font-size: 9px;
+  }
 
-nav ul li.dropdown .dropdown-content {
-  min-width: 75px;
-}
+  nav ul li.dropdown .dropdown-content {
+    min-width: 75px;
+  }
 
-nav ul li.dropdown .dropdown-content a {
-  padding: 6px 8px;
-  font-size: 8px;
-}
+  nav ul li.dropdown .dropdown-content a {
+    padding: 6px 8px;
+    font-size: 8px;
+  }
   /* Navigation Styles End */
 
   /* Banner Styles Start */
@@ -890,35 +1033,35 @@ nav ul li.dropdown .dropdown-content a {
     max-width: 300px;
     max-height: 350px;
   }
-.banner-counts{
-  justify-content: center;
-  gap: 15px;
-}
+  .banner-counts {
+    justify-content: center;
+    gap: 15px;
+  }
 
-.banner-count{
-  margin: 15px 0;
-}
+  .banner-count {
+    margin: 15px 0;
+  }
 
-.banner-count h4{
-  font-size: 15px;
-  margin-bottom: 10px;
-}
+  .banner-count h4 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
 
-.banner-count p{
-  font-size: 10px;
-}
+  .banner-count p {
+    font-size: 10px;
+  }
 
-.banner-icons{
-  justify-content: center;
-  gap: 15px;
-  font-size: 25px;
-}
-/* Banner Styles End */
+  .banner-icons {
+    justify-content: center;
+    gap: 15px;
+    font-size: 25px;
+  }
+  /* Banner Styles End */
 
-/* main section styles start */
-main .section-container {
-  padding: 50px 0;
-}
+  /* main section styles start */
+  main .section-container {
+    padding: 50px 0;
+  }
 
   /* About Styles Start */
   .about-container {
@@ -926,171 +1069,169 @@ main .section-container {
     padding: 0 16px;
     gap: 2rem;
   }
-  .about-section-title{
-  margin-top: 20px;
-}
+  .about-section-title {
+    margin-top: 20px;
+  }
 
-.about-title-description {
-  font-size: 14px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-/* About Styles End */
+  .about-title-description {
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  /* About Styles End */
 
-/* Skill Styles Start */
-.skills-description {
-  margin: 0 auto 20px auto;
-}
+  /* Skill Styles Start */
+  .skills-description {
+    margin: 0 auto 20px auto;
+  }
 
-.skills-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
 
-.skill {
-  text-align: center;
-  width: calc(50% - 12px);
-  padding: 15px 17px;
-  border-radius: 12px;
-}
+  .skill {
+    text-align: center;
+    width: calc(50% - 12px);
+    padding: 15px 17px;
+    border-radius: 12px;
+  }
 
-.skill img {
-  width: 30px;
-  height: 30px;
-}
+  .skill img {
+    width: 30px;
+    height: 30px;
+  }
 
-.skill-title{  
-  font-size: 10px;
-  margin-top: 15px;
-  margin-bottom: 10px;
-}
+  .skill-title {
+    font-size: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
 
-.skill-description{
-  font-size: 8px;
-  text-align: justify;
-}
-/* Skill Styles End */
+  .skill-description {
+    font-size: 8px;
+    text-align: justify;
+  }
+  /* Skill Styles End */
 
-/* Projects Styles Start */
-.projects-title{
-  margin-bottom: 50px;
-}
+  /* Projects Styles Start */
+  .projects-title {
+    margin-bottom: 50px;
+  }
 
-.project-container {
-  flex-direction: column;
-  gap: 12px;
-}
+  .project-container {
+    flex-direction: column;
+    gap: 12px;
+  }
 
-.project{
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  margin: 0 auto;
-}
+  .project {
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 0 auto;
+  }
 
-.project img {
-  width: 80px;
-  height: 140px;
-}
+  .project img {
+    width: 80px;
+    height: 140px;
+  }
 
-.project-app-left, .project-app-right {
-  width: 200px;
-}
+  .project-app-left,
+  .project-app-right {
+    width: 200px;
+  }
 
-.project-title {
-  margin-bottom: 18px;
-}
+  .project-title {
+    margin-bottom: 18px;
+  }
 
-.project-title {
-  font-size: 15px;
-}
+  .project-title {
+    font-size: 15px;
+  }
 
-.project-sub-title {
-  font-size: 10px;
-  margin: 5px 0px;
-}
+  .project-sub-title {
+    font-size: 10px;
+    margin: 5px 0px;
+  }
 
-.project-description {
-  font-size: 8px;
-  color: var(--dark-03);
-}
+  .project-description {
+    font-size: 8px;
+    color: var(--dark-03);
+  }
 
-.project-code {
-  margin-top: 5px;
-  font-size: 7px;
-}
+  .project-code {
+    margin-top: 5px;
+    font-size: 7px;
+  }
 
-.project-column hr {
-  margin: 15px 0;
-}
+  .project-column hr {
+    margin: 15px 0;
+  }
 
-.project-download-btn {
-  margin-top: 25px;
-}
-/* Projects Styles End */
-/* main section styles end */
-
+  .project-download-btn {
+    margin-top: 25px;
+  }
+  /* Projects Styles End */
+  /* main section styles end */
 
   /* Footer Styles Start */
-  
-.footer-container {
+
+  .footer-container {
     flex-direction: column;
     padding: 60px 20px;
     gap: 2rem;
   }
 
-.footer-column {
-  width: 100%;
-}
+  .footer-column {
+    width: 100%;
+  }
 
-.footer-column h3 {
-  font-size: 18px;
-  margin-bottom: 15px;
-}
-
-.footer-column p {
-  font-size: 12px;
-  margin-top: 6px;
-  margin-bottom: 16px;
-}
-
-.footer-icon {
-  gap: 14px;
-}
-
-.footer-icon a {
-  font-size: 18px;
-}
-
-
-.footer-icon img {
-  width: 18px;
-  height: 18px;
-}
-
-.footer-contact-info .fa-solid {
+  .footer-column h3 {
     font-size: 18px;
-}
+    margin-bottom: 15px;
+  }
 
-.footer-contact-info-item{
-  gap: 10px;
-  
-}
+  .footer-column p {
+    font-size: 12px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
 
-footer input[type="email"],
-input[type="text"],
-textarea {
-  width: 100%;
-  padding: 12px 20px;
-  margin-bottom: 14px;
-}
+  .footer-icon {
+    gap: 14px;
+  }
 
-footer hr {
-  margin: 0px 30px;
-}
+  .footer-icon a {
+    font-size: 18px;
+  }
 
-.footer-copy-container {
+  .footer-icon img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .footer-contact-info .fa-solid {
+    font-size: 18px;
+  }
+
+  .footer-contact-info-item {
+    gap: 10px;
+  }
+
+  footer input[type="email"],
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 14px;
+  }
+
+  footer hr {
+    margin: 0px 30px;
+  }
+
+  .footer-copy-container {
     flex-direction: column;
     margin: 0 auto;
     gap: 12px;
@@ -1098,36 +1239,36 @@ footer hr {
     padding: 20px 0;
   }
 
-.footer-copy-left-text{
-  font-size: 10px;
-}
+  .footer-copy-left-text {
+    font-size: 10px;
+  }
 
-.footer-copy-left-name {
-  font-size: 12px;
-}
+  .footer-copy-left-name {
+    font-size: 12px;
+  }
 
-.footer-copy-right{
-  flex-direction: column;
-  gap: 10px;
-  font-size: 10px;
-}
+  .footer-copy-right {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 10px;
+  }
 
-.footer-copy-right-links{
-  gap: 8px;
-  font-size: 10px;
-}
+  .footer-copy-right-links {
+    gap: 8px;
+    font-size: 10px;
+  }
 
-.footer-copy-right-links p{
-  gap: 8px;
-  font-size: 10px;
-}
+  .footer-copy-right-links p {
+    gap: 8px;
+    font-size: 10px;
+  }
 
-.footer-line{
-  display: none;
-}
+  .footer-line {
+    display: none;
+  }
 
-.footer-developer{
-  font-size: 8px;
-}
+  .footer-developer {
+    font-size: 8px;
+  }
   /* Footer Styles End */
 }
