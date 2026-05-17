@@ -599,7 +599,7 @@ footer hr {
 
 
 /* Medium devices (laptops, 1024px and up) */
-@media (max-width: 1024px) {
+@media (max-width: 1240px) {
   /* Common or Shared Styles Start */
   .main-section {
     max-width: 880px;
